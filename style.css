@@ -266,3 +266,29 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* CONTACT IMAGE FIX */
+.contact-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 30px auto;
+    border: 4px solid #00A8FF;
+}
+
+/* CONTACT SECTION ALIGNMENT */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* CENTER ON MOBILE */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}

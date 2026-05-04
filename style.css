@@ -292,3 +292,22 @@ footer {
         text-align: center;
     }
 }
+/* HEADER LAYOUT */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* HOVER EFFECT */
+.logo a:hover {
+    color: #00A8FF;
+}

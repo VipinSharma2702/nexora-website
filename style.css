@@ -311,3 +311,8 @@ header .container {
 .logo a:hover {
     color: #00A8FF;
 }
+.logo a {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}

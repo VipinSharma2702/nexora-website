@@ -1,143 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Nexora Digital Solutions</title>
-
-<!-- CSS -->
-<link rel="stylesheet" href="style.css">
-
-<!-- Premium Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-
-<!-- HEADER -->
-<header class="header">
-    <div class="container nav-bar">
-
-        <h1 class="logo">
-            <a href="index.html">Nexora Digital Solutions</a>
-        </h1>
-
-        <nav>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="pricing.html" class="nav-link">Pricing</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-        </nav>
-
-    </div>
-
-    
-</header>
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-content">
-        <h2>Grow Your Business Online</h2>
-        <p>We build high-converting websites & scalable marketing systems.</p>
-        <a href="contact.html" class="btn">Get Free Consultation</a>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section>
-    <div class="container">
-        <h2>Who We Are</h2>
-        <p>
-            At Nexora Digital Solutions, we help businesses grow faster with modern websites 
-            and result-driven marketing strategies. Our focus is simple — generate real leads 
-            and measurable growth for your business.
-        </p>
-    </div>
-</section>
-
-</body>
-</html>
-<!-- LEADERSHIP TEAM -->
-<section class="section leadership-section">
-    <div class="container">
-
-        <h2>Meet Our Leadership Team</h2>
-        <p class="section-subtitle">
-            Driven by innovation, strategy, customer success, and operational excellence.
-        </p>
-
-        <div class="leadership-grid">
-
-            <!-- Deepankar -->
-            <div class="leader-card">
-                <h3>Deepankar Sharma</h3>
-                <h4>Chief Executive Officer (CEO) & Technical Director</h4>
-
-                <p class="quote">
-                    “Technology should not just solve problems — it should create opportunities and simplify lives.”
-                </p>
-
-                <p>
-                    Deepankar leads the company’s technical vision and strategic growth. 
-                    With a strong focus on innovation, development, and scalability, he ensures 
-                    Nexora Digital Solutions consistently delivers reliable and modern digital experiences. 
-                    His leadership combines technical expertise with forward-thinking business strategy.
-                </p>
-            </div>
-
-            <!-- Prince -->
-            <div class="leader-card">
-                <h3>Prince Jatwani</h3>
-                <h4>Chief Marketing Officer (CMO)</h4>
-
-                <p class="quote">
-                    “A brand grows when people connect with its story and trust its value.”
-                </p>
-
-                <p>
-                    Prince oversees the company’s branding, digital presence, and marketing strategies. 
-                    From online campaigns to customer engagement, he focuses on building strong brand visibility 
-                    and meaningful audience connections that drive growth and recognition.
-                </p>
-            </div>
-
-            <!-- Rahul -->
-            <div class="leader-card">
-                <h3>Rahul Rawat</h3>
-                <h4>Head of Customer Experience</h4>
-
-                <p class="quote">
-                    “Great businesses are built on strong customer relationships and exceptional service.”
-                </p>
-
-                <p>
-                    Rahul ensures every client interaction reflects professionalism, trust, and satisfaction. 
-                    He focuses on understanding customer needs, improving user experience, and maintaining 
-                    long-term relationships through quality support and communication.
-                </p>
-            </div>
-
-            <!-- Vipin -->
-            <div class="leader-card">
-                <h3>Vipin Sharma</h3>
-                <h4>Operations Coordinator</h4>
-
-                <p class="quote">
-                    “Success comes from teamwork, coordination, and consistent execution.”
-                </p>
-
-                <p>
-                    Vipin oversees operational coordination and workflow management within the organization. 
-                    He ensures smooth communication between teams, supports project execution, and maintains 
-                    operational efficiency to keep processes organized and productive.
-                </p>
-            </div>
 
         </div>
 
     </div>
 </section>
+
+<!-- CTA -->
+<section class="section cta-section reveal">
+    <div class="container">
+
+        <h2>Ready to Build Your Brand Online?</h2>
+        <p>Let’s create something impactful together.</p>
+
+        <a href="contact.html" class="btn">Get Free Consultation</a>
+
+    </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 Nexora Digital Solutions | All Rights Reserved</p>
+    <div class="container footer-grid">
+
+        <div>
+            <h3>Nexora Digital Solutions</h3>
+            <p>Premium digital experiences designed for growth-focused businesses.</p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>nexoradigital@gmail.com</p>
+            <p>+91-XXXXXXXXXX</p>
+        </div>
+
+    </div>
+
+    <p class="copyright">© 2026 Nexora Digital Solutions. All Rights Reserved.</p>
 </footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float">💬</a>
+
+<!-- SCROLL REVEAL -->
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+window.addEventListener('scroll', () => {
+    reveals.forEach((element) => {
+        const windowHeight = window.innerHeight;
+        const revealTop = element.getBoundingClientRect().top;
+
+        if (revealTop < windowHeight - 100) {
+            element.classList.add('active-reveal');
+        }
+    });
+});
+</script>
+
+</body>
+</html>

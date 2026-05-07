@@ -400,3 +400,60 @@ header .container {
         margin-left: 15px;
     }
 }
+/* LEADERSHIP SECTION */
+.leadership-section {
+    background: rgba(255,255,255,0.02);
+}
+
+/* SUBTITLE */
+.section-subtitle {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #cfcfcf;
+}
+
+/* GRID */
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* CARDS */
+.leader-card {
+    background: rgba(17, 45, 78, 0.9);
+    padding: 30px;
+    border-radius: 14px;
+    text-align: left;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.leader-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+/* NAME */
+.leader-card h3 {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+/* DESIGNATION */
+.leader-card h4 {
+    color: #4FC3F7;
+    font-size: 15px;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+/* QUOTE */
+.quote {
+    font-style: italic;
+    color: #d7d7d7;
+    margin-bottom: 18px;
+    border-left: 3px solid #00A8FF;
+    padding-left: 15px;
+}

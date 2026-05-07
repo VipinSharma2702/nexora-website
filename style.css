@@ -55,7 +55,7 @@ body{
     color:#ffffff;
     text-decoration:none;
 
-    font-size:24px;
+    font-size:22px;
     font-weight:700;
 
     transition:0.3s;
@@ -75,9 +75,9 @@ nav{
     color:#d6e8ff;
     text-decoration:none;
 
-    margin-left:30px;
+    margin-left:28px;
 
-    font-size:15px;
+    font-size:14px;
     font-weight:500;
 
     position:relative;
@@ -112,7 +112,7 @@ nav{
 
 /* HERO SECTION */
 .hero{
-    min-height:90vh;
+    min-height:85vh;
 
     background:
     linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.7)),
@@ -129,29 +129,29 @@ nav{
 
 /* HERO CONTENT */
 .hero-content{
-    max-width:800px;
+    max-width:760px;
 }
 
 .hero h2{
-    font-size:60px;
+    font-size:48px;
     line-height:1.2;
 
-    margin-bottom:25px;
+    margin-bottom:22px;
 }
 
 .hero p{
     color:#d6d6d6;
 
-    font-size:18px;
+    font-size:16px;
 
-    margin-bottom:35px;
+    margin-bottom:32px;
 }
 
 /* BUTTON */
 .btn{
     display:inline-block;
 
-    padding:14px 32px;
+    padding:13px 30px;
 
     background:linear-gradient(135deg,#00A8FF,#0077B6);
 
@@ -160,6 +160,7 @@ nav{
 
     border-radius:8px;
 
+    font-size:15px;
     font-weight:500;
 
     transition:0.3s ease;
@@ -173,14 +174,14 @@ nav{
 
 /* GENERAL SECTION */
 .section{
-    padding:90px 20px;
+    padding:85px 20px;
 }
 
 /* TITLES */
 .section-title{
     text-align:center;
 
-    font-size:42px;
+    font-size:34px;
 
     margin-bottom:18px;
 }
@@ -188,13 +189,13 @@ nav{
 .section-subtitle{
     text-align:center;
 
-    max-width:750px;
+    max-width:720px;
 
-    margin:auto auto 60px;
+    margin:auto auto 55px;
 
     color:#cfcfcf;
 
-    font-size:17px;
+    font-size:16px;
 }
 
 /* GRID SYSTEMS */
@@ -209,7 +210,7 @@ nav{
     grid-template-columns:
     repeat(auto-fit,minmax(280px,1fr));
 
-    gap:30px;
+    gap:28px;
 }
 
 /* CARDS */
@@ -237,7 +238,7 @@ nav{
 .team-card:hover,
 .testimonial-card:hover,
 .price-card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-8px);
 
     box-shadow:0 18px 45px rgba(0,0,0,0.35);
 }
@@ -246,7 +247,7 @@ nav{
 .card img,
 .price-card img{
     width:100%;
-    height:240px;
+    height:230px;
 
     object-fit:cover;
 }
@@ -254,12 +255,12 @@ nav{
 /* CARD CONTENT */
 .card-content,
 .price-content{
-    padding:28px;
+    padding:26px;
 }
 
 .card-content h3,
 .price-content h3{
-    font-size:24px;
+    font-size:21px;
 
     margin-bottom:12px;
 }
@@ -267,11 +268,13 @@ nav{
 .card-content p,
 .price-content p{
     color:#d6d6d6;
+
+    font-size:15px;
 }
 
 /* STAT BOX */
 .stat-box{
-    padding:40px 25px;
+    padding:38px 25px;
 
     text-align:center;
 }
@@ -279,14 +282,14 @@ nav{
 .stat-box h3{
     color:#00A8FF;
 
-    font-size:42px;
+    font-size:34px;
 
     margin-bottom:10px;
 }
 
 /* WHY BOX */
 .why-box{
-    padding:35px;
+    padding:32px;
 
     text-align:center;
 }
@@ -295,15 +298,19 @@ nav{
     color:#00A8FF;
 
     margin-bottom:12px;
+
+    font-size:20px;
 }
 
 /* TEAM */
 .team-card{
-    padding:32px;
+    padding:30px;
 }
 
 .team-card h3{
     margin-bottom:8px;
+
+    font-size:22px;
 }
 
 .team-card h4{
@@ -311,6 +318,10 @@ nav{
 
     margin-bottom:18px;
 
+    font-size:14px;
+}
+
+.team-card p{
     font-size:15px;
 }
 
@@ -332,7 +343,7 @@ nav{
 }
 
 .price{
-    font-size:40px;
+    font-size:32px;
 
     color:#00A8FF;
 
@@ -351,6 +362,8 @@ nav{
     margin-bottom:12px;
 
     color:#d6d6d6;
+
+    font-size:15px;
 }
 
 /* CTA BOX */
@@ -358,7 +371,7 @@ nav{
     background:
     linear-gradient(135deg,#0d2946,#12375b);
 
-    padding:80px 30px;
+    padding:75px 30px;
 
     border-radius:22px;
 
@@ -366,7 +379,7 @@ nav{
 }
 
 .cta-box h2{
-    font-size:46px;
+    font-size:34px;
 
     margin-bottom:20px;
 }
@@ -376,14 +389,14 @@ nav{
 
     margin-bottom:30px;
 
-    font-size:18px;
+    font-size:16px;
 }
 
 /* FOOTER */
 footer{
     background:#061323;
 
-    padding:70px 20px 30px;
+    padding:65px 20px 30px;
 }
 
 /* FOOTER GRID */
@@ -393,19 +406,23 @@ footer{
     grid-template-columns:
     repeat(auto-fit,minmax(250px,1fr));
 
-    gap:40px;
+    gap:38px;
 
-    margin-bottom:45px;
+    margin-bottom:40px;
 }
 
 /* FOOTER TEXT */
 .footer-grid h3,
 .footer-grid h4{
     margin-bottom:16px;
+
+    font-size:20px;
 }
 
 .footer-grid p{
     color:#cfcfcf;
+
+    font-size:15px;
 }
 
 .footer-grid a{
@@ -416,6 +433,8 @@ footer{
     text-decoration:none;
 
     color:#d6d6d6;
+
+    font-size:15px;
 
     transition:0.3s;
 }
@@ -433,6 +452,8 @@ footer{
     padding-top:25px;
 
     color:#9d9d9d;
+
+    font-size:14px;
 }
 
 /* WHATSAPP */
@@ -442,8 +463,8 @@ footer{
     bottom:20px;
     right:20px;
 
-    width:60px;
-    height:60px;
+    width:58px;
+    height:58px;
 
     border-radius:50%;
 
@@ -457,7 +478,7 @@ footer{
 
     text-decoration:none;
 
-    font-size:30px;
+    font-size:28px;
 
     box-shadow:0 10px 25px rgba(0,0,0,0.35);
 
@@ -467,22 +488,22 @@ footer{
 }
 
 .whatsapp:hover{
-    transform:scale(1.1);
+    transform:scale(1.08);
 }
 
 /* RESPONSIVE */
 @media(max-width:992px){
 
     .hero h2{
-        font-size:48px;
+        font-size:40px;
     }
 
     .section-title{
-        font-size:36px;
+        font-size:30px;
     }
 
     .cta-box h2{
-        font-size:38px;
+        font-size:30px;
     }
 }
 
@@ -506,15 +527,15 @@ footer{
     }
 
     .hero{
-        min-height:80vh;
+        min-height:75vh;
     }
 
     .hero h2{
-        font-size:36px;
+        font-size:30px;
     }
 
     .hero p{
-        font-size:16px;
+        font-size:15px;
     }
 
     .section{
@@ -522,19 +543,19 @@ footer{
     }
 
     .section-title{
-        font-size:30px;
+        font-size:28px;
     }
 
     .cta-box{
-        padding:60px 20px;
+        padding:55px 20px;
     }
 
     .cta-box h2{
-        font-size:30px;
+        font-size:28px;
     }
 
     .card img,
     .price-card img{
-        height:220px;
+        height:210px;
     }
 }

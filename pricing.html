@@ -1,15 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Pricing - Nexora Digital Solutions</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css" />
 
 <!-- Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fafc;
+    color:#222;
+    line-height:1.6;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+.header{
+    background:#0f172a;
+    padding:18px 0;
+}
+
+.nav-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo a{
+    color:#fff;
+    text-decoration:none;
+    font-size:24px;
+    font-weight:700;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+.nav-link{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:#fff;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.small-hero{
+    padding:70px 20px;
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    opacity:0.9;
+}
+
+/* SECTION */
+.section{
+    padding:70px 0;
+}
+
+.section h2{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:50px;
+    color:#0f172a;
+}
+
+/* PRICING GRID */
+.pricing{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    align-items:stretch;
+}
+
+/* CARD */
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px 30px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    font-size:28px;
+    margin-bottom:10px;
+    color:#0f172a;
+}
+
+.starting{
+    font-size:14px;
+    color:#64748b;
+    margin-bottom:5px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.price{
+    font-size:38px;
+    font-weight:700;
+    color:#2563eb;
+    margin-bottom:25px;
+}
+
+.card ul{
+    list-style:none;
+    margin-bottom:30px;
+    text-align:left;
+}
+
+.card ul li{
+    padding:10px 0;
+    border-bottom:1px solid #e2e8f0;
+    font-size:15px;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:10px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* CTA */
+.cta-box{
+    text-align:center;
+    background:#fff;
+    padding:60px 30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.06);
+}
+
+.cta-box p{
+    margin:15px 0 25px;
+    color:#475569;
+}
+
+/* FOOTER */
+footer{
+    background:#0f172a;
+    color:#fff;
+    text-align:center;
+    padding:22px;
+    margin-top:40px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .hero h2{
+        font-size:32px;
+    }
+
+    nav{
+        margin-top:15px;
+        justify-content:center;
+        width:100%;
+    }
+
+    .card{
+        padding:30px 22px;
+    }
+}
+
+</style>
+
 </head>
 
 <body>
@@ -34,12 +245,12 @@
 <!-- HERO -->
 <section class="hero small-hero">
     <div class="hero-content">
-        <h2>Affordable Plans for Every Business</h2>
-        <p>Choose a plan that fits your growth stage.</p>
+        <h2>Affordable Pricing for Every Business</h2>
+        <p>Professional digital solutions designed to help your business grow faster.</p>
     </div>
 </section>
 
-<!-- PRICING -->
+<!-- WEBSITE DEVELOPMENT -->
 <section class="section">
 <div class="container">
 
@@ -48,41 +259,56 @@
 <div class="pricing">
 
 <div class="card">
+<div>
 <h3>Basic Website</h3>
-<p class="price">₹9,999</p>
+<p class="starting">Starting From</p>
+<p class="price">₹7,999</p>
+
 <ul>
 <li>✔ 3–5 Pages Website</li>
 <li>✔ Mobile Responsive</li>
-<li>✔ Basic Design</li>
+<li>✔ Modern UI Design</li>
 <li>✔ Contact Form</li>
-<li>✔ 3 Days Delivery</li>
+<li>✔ Fast Delivery</li>
 </ul>
+</div>
+
 <a href="contact.html" class="btn">Get Started</a>
 </div>
 
 <div class="card">
+<div>
 <h3>Business Website</h3>
-<p class="price">₹19,999</p>
+<p class="starting">Starting From</p>
+<p class="price">₹14,999</p>
+
 <ul>
-<li>✔ 6–10 Pages</li>
+<li>✔ 6–10 Pages Website</li>
 <li>✔ Premium Design</li>
-<li>✔ SEO Optimized</li>
+<li>✔ SEO Optimization</li>
 <li>✔ Speed Optimization</li>
 <li>✔ WhatsApp Integration</li>
 </ul>
+</div>
+
 <a href="contact.html" class="btn">Get Started</a>
 </div>
 
 <div class="card">
-<h3>E-Commerce</h3>
-<p class="price">₹29,999+</p>
+<div>
+<h3>E-Commerce Store</h3>
+<p class="starting">Starting From</p>
+<p class="price">₹24,999</p>
+
 <ul>
 <li>✔ Online Store Setup</li>
-<li>✔ Product Upload</li>
 <li>✔ Payment Gateway</li>
+<li>✔ Product Upload</li>
 <li>✔ Admin Dashboard</li>
 <li>✔ Order Management</li>
 </ul>
+</div>
+
 <a href="contact.html" class="btn">Get Started</a>
 </div>
 
@@ -91,7 +317,7 @@
 </div>
 </section>
 
-<!-- MARKETING -->
+<!-- DIGITAL MARKETING -->
 <section class="section">
 <div class="container">
 
@@ -100,38 +326,53 @@
 <div class="pricing">
 
 <div class="card">
+<div>
 <h3>Starter Plan</h3>
-<p class="price">₹10,000/month</p>
+<p class="starting">Starting From</p>
+<p class="price">₹7,000/mo</p>
+
 <ul>
 <li>✔ Social Media Management</li>
 <li>✔ Basic SEO</li>
-<li>✔ 10–12 Posts / Month</li>
-<li>✔ Monthly Report</li>
+<li>✔ Monthly Posts</li>
+<li>✔ Performance Reports</li>
 </ul>
+</div>
+
 <a href="contact.html" class="btn">Start Marketing</a>
 </div>
 
 <div class="card">
+<div>
 <h3>Growth Plan</h3>
-<p class="price">₹20,000/month</p>
+<p class="starting">Starting From</p>
+<p class="price">₹15,000/mo</p>
+
 <ul>
 <li>✔ SEO + Ads Management</li>
-<li>✔ Lead Generation Strategy</li>
+<li>✔ Lead Generation</li>
 <li>✔ Content Creation</li>
 <li>✔ Performance Tracking</li>
 </ul>
+</div>
+
 <a href="contact.html" class="btn">Start Marketing</a>
 </div>
 
 <div class="card">
+<div>
 <h3>Maintenance</h3>
-<p class="price">₹3,000/month</p>
+<p class="starting">Starting From</p>
+<p class="price">₹2,999/mo</p>
+
 <ul>
 <li>✔ Website Updates</li>
 <li>✔ Bug Fixes</li>
-<li>✔ Security Checks</li>
+<li>✔ Security Monitoring</li>
 <li>✔ Backup Support</li>
 </ul>
+</div>
+
 <a href="contact.html" class="btn">Get Support</a>
 </div>
 
@@ -143,9 +384,13 @@
 <!-- CTA -->
 <section class="section">
 <div class="container">
-<h2>Not Sure Which Plan is Right?</h2>
-<p>We’ll guide you based on your business needs.</p>
+
+<div class="cta-box">
+<h2>Need a Custom Solution?</h2>
+<p>We help businesses choose the perfect package based on their goals and budget.</p>
 <a href="contact.html" class="btn">Get Free Consultation</a>
+</div>
+
 </div>
 </section>
 

@@ -1,89 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Contact - Nexora Digital Solutions</title>
+<title>Contact | Nexora Digital Solutions</title>
 
 <link rel="stylesheet" href="style.css">
 
-<!-- Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* PAGE */
+body{
+    background:#071B30;
+    color:#ffffff;
+}
+
+/* HERO */
+.small-hero{
+    min-height:55vh;
+}
+
+.hero-content h2{
+    font-size:42px;
+    margin-bottom:18px;
+}
+
+.hero-content p{
+    color:#d6d6d6;
+    font-size:16px;
+}
+
+/* CONTACT GRID */
+.contact-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:40px;
+
+    align-items:start;
+}
+
+/* CONTACT INFO */
+.contact-info,
+.contact-form{
+    background:#0d2946;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* TITLES */
+.contact-info h2,
+.contact-form h2{
+    font-size:30px;
+
+    margin-bottom:20px;
+}
+
+/* TEXT */
+.contact-info p{
+    color:#d6d6d6;
+
+    margin-bottom:18px;
+
+    font-size:15px;
+}
+
+/* FORM */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+/* INPUTS */
+input,
+textarea{
+    width:100%;
+
+    padding:15px 18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#102f50;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    outline:none;
+}
+
+/* PLACEHOLDER */
+input::placeholder,
+textarea::placeholder{
+    color:#a9bdd1;
+}
+
+/* TEXTAREA */
+textarea{
+    resize:none;
+}
+
+/* BUTTON */
+button.btn{
+    border:none;
+    cursor:pointer;
+}
+
+/* TEAM SECTION */
+.team-section{
+    text-align:center;
+}
+
+/* IMAGE */
+.contact-img{
+    width:100%;
+    max-width:750px;
+
+    height:420px;
+
+    object-fit:cover;
+
+    border-radius:22px;
+
+    margin:35px auto 20px;
+
+    display:block;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* TEAM TEXT */
+.team-section p{
+    color:#d6d6d6;
+
+    font-size:16px;
+}
+
+/* FOOTER */
+footer{
+    background:#061323;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#9d9d9d;
+
+    font-size:14px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .hero-content h2{
+        font-size:30px;
+    }
+
+    .contact-info,
+    .contact-form{
+        padding:30px 24px;
+    }
+
+    .contact-info h2,
+    .contact-form h2{
+        font-size:26px;
+    }
+
+    .contact-img{
+        height:280px;
+    }
+}
+
+</style>
+
 </head>
 
 <body>
 
 <!-- HEADER -->
 <header class="header">
-    <div class="container nav-bar">
 
-        <h1 class="logo">
-            <a href="index.html">Nexora Digital Solutions</a>
-        </h1>
+<div class="container nav-bar">
 
-        <nav>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="pricing.html" class="nav-link">Pricing</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-        </nav>
+<h1 class="logo">
+<a href="index.html">Nexora Digital Solutions</a>
+</h1>
 
-    </div>
+<nav>
+<a href="services.html" class="nav-link">Services</a>
+<a href="pricing.html" class="nav-link">Pricing</a>
+<a href="contact.html" class="nav-link">Contact</a>
+</nav>
+
+</div>
+
 </header>
 
 <!-- HERO -->
 <section class="hero small-hero">
-    <div class="hero-content">
-        <h2>Let’s Build Something Great</h2>
-        <p>Reach out and we’ll get back to you within 24 hours.</p>
-    </div>
+
+<div class="hero-content">
+
+<h2>
+Let’s Build Something Great
+</h2>
+
+<p>
+Reach out and we’ll get back to you within 24 hours.
+</p>
+
+</div>
+
 </section>
 
-<!-- CONTACT SECTION -->
+<!-- CONTACT -->
 <section class="section">
-    <div class="container contact-grid">
 
-        <!-- LEFT INFO -->
-        <div class="contact-info">
-            <h2>Get in Touch</h2>
-            <p>We help businesses grow with websites and digital marketing. Contact us to discuss your project.</p>
+<div class="container contact-grid">
 
-            <p><strong>Email:</strong> nexoradigital@gmail.com</p>
-            <p><strong>Phone / WhatsApp:</strong> +91-XXXXXXXXXX</p>
+<!-- LEFT -->
+<div class="contact-info">
 
-            <a href="https://wa.me/91XXXXXXXXXX" class="btn">Chat on WhatsApp</a>
-        </div>
+<h2>
+Get in Touch
+</h2>
 
-        <!-- RIGHT FORM -->
-        <div class="contact-form">
-            <h2>Send a Message</h2>
+<p>
+We help businesses grow through premium websites,
+digital marketing, and scalable digital solutions.
+</p>
 
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="text" placeholder="Your Phone">
-                <textarea placeholder="Your Message" rows="5"></textarea>
+<p>
+<strong>Email:</strong><br>
+nexoradigital@gmail.com
+</p>
 
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
+<p>
+<strong>Phone / WhatsApp:</strong><br>
++91-XXXXXXXXXX
+</p>
 
-    </div>
+<a href="https://wa.me/91XXXXXXXXXX" class="btn">
+Chat on WhatsApp
+</a>
+
+</div>
+
+<!-- RIGHT -->
+<div class="contact-form">
+
+<h2>
+Send a Message
+</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Your Phone Number">
+
+<textarea placeholder="Tell us about your project" rows="6"></textarea>
+
+<button type="submit" class="btn">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
 </section>
 
-<!-- MAP / IMAGE -->
+<!-- TEAM -->
+<section class="section team-section">
+
+<div class="container">
+
+<h2 class="section-title">
+Meet Our Team
+</h2>
+
+<img src="images/team.jpg" alt="Team" class="contact-img">
+
+<p>
+Dedicated professionals helping businesses grow digitally with innovative solutions and modern strategies.
+</p>
+
+</div>
+
+</section>
+
+<!-- CTA -->
 <section class="section">
-    <div class="container">
-        <h2>Meet Our Team</h2>
-        <img src="images/team.jpg" alt="Team" class="contact-img">
-        <p>Dedicated professionals helping businesses grow digitally.</p>
-    </div>
+
+<div class="container">
+
+<div class="cta-box">
+
+<h2>
+Ready to Grow Your Business?
+</h2>
+
+<p>
+Let’s create a strong digital presence for your brand.
+</p>
+
+<a href="services.html" class="btn">
+Explore Services
+</a>
+
+</div>
+
+</div>
+
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 Nexora Digital Solutions | All Rights Reserved</p>
+© 2026 Nexora Digital Solutions | All Rights Reserved
 </footer>
 
 </body>
+
 </html>
